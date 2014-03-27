@@ -1,0 +1,17 @@
+﻿using System.Diagnostics.CodeAnalysis;
+
+[module: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "KmsNgService.Controllers.DecryptRequestBody.#CipherText", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "KmsNgService.Controllers.DecryptResponseBody.#PlainText", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "KmsNgService.Controllers.KeyACE.#Allowed", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "KmsNgService.Controllers.KeyACE.#Subject", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "KmsNgService.Controllers.SignRequestBody.#Digest", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "KmsNgService.Controllers.SignResponseBody.#Signature", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1053:StaticHolderTypesShouldNotHaveConstructors", Scope = "type", Target = "KmsNgWorkflow.Configuration", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1001:TypesThatOwnDisposableFieldsShouldBeDisposable", Scope = "type", Target = "KmsNgWorkflow.DVTRunner", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1053:StaticHolderTypesShouldNotHaveConstructors", Scope = "type", Target = "KmsNgWorkflow.Helper", MessageId = "")]
+[module: SuppressMessage("Microsoft.Security.Cryptography", "CA5358:RSAProviderNeeds2048bitKey", Scope = "member", Target = "KmsNgWorkflow.Helper.#BuildRsaKey(KmsNgService.Controllers.JsonKeyModel)", MessageId = "")]
+[module: SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Scope = "member", Target = "KmsNgWorkflow.Helper.#BuildRsaKey(KmsNgService.Controllers.JsonKeyModel)", MessageId = "0")]
+[module: SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Scope = "member", Target = "KmsNgWorkflow.Helper.#ParseDecryptResponse(System.Net.Http.HttpResponseMessage)", MessageId = "0")]
+[module: SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Scope = "member", Target = "KmsNgWorkflow.Helper.#ParseKey(System.Net.Http.HttpResponseMessage)", MessageId = "0")]
+[module: SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Scope = "member", Target = "KmsNgWorkflow.Helper.#ParseSignResponse(System.Net.Http.HttpResponseMessage)", MessageId = "0")]
+[module: SuppressMessage("Microsoft.Design", "CA1051:DoNotDeclareVisibleInstanceFields", Scope = "member", Target = "KmsNgService.Controllers.WrapResponseBody.#value", MessageId = "")]

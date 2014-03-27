@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<WorkflowProject Name="KmsNgWorkflow"
+                 Version="1.0.0.0"
+                 Executable="Microsoft.KmsNg.KmsNgValidationHost.exe">
+  <Add>
+    <Workflow Name="KmsNgValidationWorkflow"
+              Id="CB63F96E-B7BD-4531-A82A-18E212E86072"
+              WorkflowCredential="WorkflowCredential_TopologyAdmin"
+              InternalWorkflow="false"
+              AssemblyQualifiedTypeName="KmsNgWorkflow.KmsNgValidationWorkflow, Microsoft.KmsNg.ValidationWorkflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+              Description="Validates KmsNg Azure deployment in staging environment to determine whether the deployment can be moved to the production environment.">
+    </Workflow>
+  </Add>
+  <Delete>
+  </Delete>
+</WorkflowProject>

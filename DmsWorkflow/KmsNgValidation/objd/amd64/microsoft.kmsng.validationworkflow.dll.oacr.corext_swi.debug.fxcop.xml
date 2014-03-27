@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+<OACRDEFECTCOUNT>1</OACRDEFECTCOUNT>
+<OACRERRORCOUNT>0</OACRERRORCOUNT>
+<DEFECT _seq="1"><SFA><LINE>1</LINE><COLUMN>0</COLUMN><FILENAME>microsoft.kmsng.validationworkflow.dll</FILENAME><FILEPATH>d:\deployment\dmsworkflow\kmsngvalidation\objd\amd64\</FILEPATH></SFA><DEFECTCODE>20143</DEFECTCODE><DESCRIPTION>FxCop - Error processing 'microsoft.kmsng.validationworkflow.dll' (error code 0xC0000005, see 'd:\AADRMStable\OACRTemp\3.5.51220.0\AMD64\CoreXT_SWI.debug.fxcop.log' for details)</DESCRIPTION><FUNCTION></FUNCTION><FUNCLINE></FUNCLINE><PATH/><BINARY>d:\deployment\dmsworkflow\kmsngvalidation\objd\amd64\microsoft.kmsng.validationworkflow.dll</BINARY><OACRTRIGGER>d:\AADRMStable\private\server\source\KmsNg\FrontRole\Controllers\JsonSerialization.cs</OACRTRIGGER></DEFECT>
+</DEFECTS>

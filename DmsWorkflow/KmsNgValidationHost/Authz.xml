@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuthZ>
+  <Operation>
+    <Add>KmsNgValidationWorkflow</Add>
+  </Operation>
+
+  <OperationsToTask>
+    <DmsReadWriteWorkflow>
+      <Add>KmsNgValidationWorkflow</Add>
+    </DmsReadWriteWorkflow>
+
+    <DmsReadOnlyWorkflow>
+      <Add>KmsNgValidationWorkflow</Add>
+    </DmsReadOnlyWorkflow>
+    <DmsSupportWorkflow>
+      <Add>
+      </Add>
+    </DmsSupportWorkflow>
+  </OperationsToTask>
+</AuthZ>

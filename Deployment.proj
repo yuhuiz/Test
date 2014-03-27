@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" xmlns="http://schemas.Microsoft.com/developer/msbuild/2003">
+  <Import Project="$(EnvironmentConfig)" />
+  <Import Project="$(SDROOT)\private\server\source\CommonProjectSettings\CommonProjectSettings.csproj" />
+  <Import Project="$(inetroot)\private\server\source\Deployment\SkyNet\DmsProjects\DmsSettings.settings" /> 
+
+  <PropertyGroup>
+    <CoverageDisabled>True</CoverageDisabled>
+    <Platform Condition="$(_BuildArch) == 'x86'">x86</Platform>
+    <Platform Condition="$(_BuildArch) == 'AMD64'">x64</Platform>
+  </PropertyGroup>
+
+    <ItemGroup>
+    
+    <Robocopy Include="Topology\">
+      <DestinationFolder>$(DmsOutputBaseDir)\Topology</DestinationFolder>
+      <IsRecursive>true</IsRecursive>
+      <FileMatch>*</FileMatch>
+    </Robocopy>
+        
+  </ItemGroup>
+  <Import Project="$(ExtendedTargetsPath)\NoTarget.targets" />
+</Project>

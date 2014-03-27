@@ -1,0 +1,8 @@
+d:\aadrmstabledmsworkflow\kmsngvalidation\objd\amd64\Microsoft.KmsNg.ValidationWorkflow.dll
+d:\aadrmstabledmsworkflow\kmsngvalidation\objd\amd64\Microsoft.KmsNg.ValidationWorkflow.pdb
+d:\deployment\dmsworkflow\kmsngvalidation\objd\amd64\kmsngvalidation.csprojResolveAssemblyReference.cache
+d:\deployment\dmsworkflow\kmsngvalidation\objd\amd64\KmsNgWorkflow.Resources.resources
+d:\deployment\dmsworkflow\kmsngvalidation\objd\amd64\kmsngvalidation.csproj.GenerateResource.Cache
+d:\deployment\dmsworkflow\kmsngvalidation\objd\amd64\_generated.cs
+d:\deployment\dmsworkflow\kmsngvalidation\objd\amd64\Microsoft.KmsNg.ValidationWorkflow.dll
+d:\deployment\dmsworkflow\kmsngvalidation\objd\amd64\Microsoft.KmsNg.ValidationWorkflow.pdb

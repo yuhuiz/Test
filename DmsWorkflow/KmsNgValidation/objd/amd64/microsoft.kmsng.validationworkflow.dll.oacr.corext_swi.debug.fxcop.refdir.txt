@@ -1,0 +1,4 @@
+d:\deployment\dmsworkflow\kmsngvalidation\
+d:\cxcache\microsoft.identitymodel.clients.activedirectory.1.0.1\lib\net40\
+d:\cxcache\dmsclient.1.0.6000.952\
+d:\cxcache\dotnetfxrefassemblies.corext.4.0.0\

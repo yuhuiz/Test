@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Condition="'$(BuildingInsideVisualStudio)' != 'true'" Project="$(EnvironmentConfig)" />
+  <Import Project="$(SDROOT)\private\server\source\CommonProjectSettings\CommonProjectSettings.csproj" />
+  <PropertyGroup>
+    <CoverageDisabled>False</CoverageDisabled>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF797099-6C35-4428-A175-4294837B8F4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KmsNgWorkflow</RootNamespace>
+    <AssemblyName>Microsoft.KmsNg.ValidationWorkflow</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RMSO_DISABLE_SIGNING)' == '1' ">
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Online.Management.Contracts">
+      <Private>True</Private>
+      <HintPath>$(PkgDmsClient)\Microsoft.Online.Management.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.Management.WorkflowContracts">
+      <Private>True</Private>
+      <HintPath>$(PkgDmsClient)\Microsoft.Online.Management.WorkflowContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>$(PkgDmsClient)\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>$(PkgDmsClient)\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>$(PkgDmsClient)\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <Private>True</Private>
+      <HintPath>$(PkgDmsClient)\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+      <Private>True</Private>
+      <HintPath>$(PkgMicrosoft_IdentityModel_Clients_ActiveDirectory)\lib\net40\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(inetroot)\private\server\source\KmsNg\FrontRole\Controllers\JsonSerialization.cs">
+      <Link>JsonSerialization.cs</Link>
+    </Compile>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="DVTRunner.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="KmsNgValidationWorkflow.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RestServiceProxy.cs" />
+    <Compile Include="Tracing.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyTransferPackage-Ford_BVT_Key.byok" />
+  </ItemGroup>
+  <Import Condition="'$(BuildingInsideVisualStudio)' == 'true'" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Condition="'$(BuildingInsideVisualStudio)' != 'true'" Project="$(ExtendedTargetsPath)\Microsoft.CSharp.targets" />
+</Project>
